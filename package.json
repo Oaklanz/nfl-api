@@ -4,6 +4,7 @@
   "description": "## Instructions In the initial commit to this project, you have been provided data about NFL teams. Over the course of the next couple of classes we will use this data to build up a REST API. These exercises will be completed in class.",
   "main": ".eslintrc.js",
   "scripts": {
+    "test": "./node_modules/.bin/mocha test/**/*.test.js",
     "dev": "./node_modules/.bin/nodemon index.js",
     "lint": "./node_modules/.bin/eslint --format codeframe .",
     "lint:fix": "./node_modules/.bin/eslint --format codeframe --fix ."
@@ -19,8 +20,12 @@
   },
   "homepage": "https://github.com/stackeducation/nfl-api#readme",
   "devDependencies": {
+    "chai": "^4.3.4",
     "eslint": "^6.8.0",
-    "nodemon": "^2.0.2"
+    "mocha": "^8.4.0",
+    "nodemon": "^2.0.2",
+    "sinon": "^10.0.0",
+    "sinon-chai": "^3.6.0"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
